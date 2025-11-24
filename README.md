@@ -139,8 +139,14 @@ banking-modern-datastack/
 
 ---
 
-**Author**: *Jaya Chandra Kadiveti*  
-**LinkedIn**: [jayachandrakadiveti](https://www.linkedin.com/in/jayachandrakadiveti/)  
-**Contact**: [datawithjay1@gmail.com](mailto:datawithjay1@gmail.com)  
+## 👤 About the Author
 
-# audit-ready-banking-ingestion-pipeline
+**Deeba Farheen H N**  
+Data Engineer | M.S. Data Science @ University of Michigan  
+I specialize in building scalable data systems and transforming raw operational data into actionable intelligence.
+
+- 🔗 [LinkedIn](https://linkedin.com/in/deeba-farheen-h-n)
+- 💻 [GitHub](https://github.com/deebafar04)
+- 📫 [deeba@umich.edu](mailto:deeba@umich.edu)
+
+> 🌟 If you found this project helpful or insightful, feel free to star the repo and connect!

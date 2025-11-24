@@ -12,11 +12,32 @@
 
 ---
 
-## 📌 Project Overview
-This project demonstrates an **end-to-end modern data stack pipeline** for a **Banking domain**.  
-We simulate **customer, account, and transaction data**, stream changes in real time, transform them into analytics-ready models, and visualize insights — following **best practices of CI/CD and data warehousing**.
+## 📌 What this project is
 
-👉 Think of it as a **real-world banking data ecosystem** built on modern data tools.  
+This repo demonstrates a modern data stack pipeline for a banking domain using:
+OLTP source in Postgres
+Change Data Capture (CDC) via Debezium → Kafka
+Landing layer as partitioned Parquet on S3-compatible MinIO
+Warehouse loading into Snowflake via Airflow
+Transformations + SCD Type-2 history using dbt snapshots
+Marts (dimensions + fact table) built incrementally
+CI/CD that validates and deploys dbt models to Snowflake
+
+👉 Even though the project runs locally with Docker, everything is designed to map cleanly to AWS production patterns (see AWS section below).
+
+---
+
+## 🎯 Problem statement
+
+Banks need analytics on customers, accounts, and transactions without running heavy queries on OLTP systems and while keeping historical changes (ex: account balance or customer email updates).
+This project solves:
+
+Reliable ingestion from transactional source
+Near-real-time updates using CDC
+Cost-friendly lake landing (Parquet + partitions)
+Clean modeling into facts/dimensions
+SCD2 history for audit + compliance
+Automated orchestration + deployment
 
 ---
 
